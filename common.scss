@@ -1,0 +1,97 @@
+// font family Inter
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+// files
+
+@import "./vars.scss";
+
+// nullify styles
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article>*+* {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+// common styles 
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: $main-green;
+}
+
+h2 {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+
+    color: $light-green !important;
+}

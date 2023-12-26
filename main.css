@@ -1,0 +1,45 @@
+.main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.main__inner {
+  margin-bottom: 180px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.main__inner__bg {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  z-index: -1;
+  max-width: 1356.7px;
+  height: 1049.34px;
+  display: block;
+}
+.main__inner__title {
+  margin-bottom: 80px;
+}
+.main__inner__buttons {
+  width: 100%;
+  max-width: 420px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.main__user {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.main__user__number {
+  padding: 10px 30px;
+  color: #B2C1BA;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  transition: 0.2s ease;
+}
+.button:hover {
+  transform: translateY(-3px);
+}/*# sourceMappingURL=main.css.map */

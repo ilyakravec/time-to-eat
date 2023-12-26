@@ -1,0 +1,8 @@
+.loading {
+  height: 100vh;
+}
+.loading__inner {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}/*# sourceMappingURL=loading.css.map */

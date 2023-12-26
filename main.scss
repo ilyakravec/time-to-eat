@@ -1,0 +1,60 @@
+@import "./vars.scss";
+
+.main {
+    position: relative;
+    height: 100vh;
+
+    overflow: hidden;
+
+    &__inner {
+        margin-bottom: 180px;
+
+        column-gap: 30px;
+
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            left: -350px;
+            z-index: -1;
+
+            max-width: 1356.7px;
+            height: 1049.34px;
+            display: block;
+        }
+
+        &__title {
+            margin-bottom: 80px;
+        }
+
+        &__buttons {
+            width: 100%;
+            max-width: 420px;
+
+            column-gap: 20px;
+
+        }
+    }
+
+    &__user {
+        column-gap: 20px;
+
+        &__number {
+            padding: 10px 30px;
+
+            color: $gray;
+        }
+    }
+
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+
+    transition: .2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,27 @@
+.update {
+    height: 100vh;
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        z-index: -1;
+    }
+
+    &__inner {
+        width: 100%;
+    }
+
+    &__logo {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+    }
+}
