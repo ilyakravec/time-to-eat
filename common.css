@@ -58,6 +58,7 @@ select {
 body {
   font-family: "Inter", sans-serif;
   font-size: 28px;
+  overflow: hidden;
 }
 
 .container {

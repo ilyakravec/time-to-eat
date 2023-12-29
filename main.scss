@@ -1,30 +1,30 @@
 @import "./vars.scss";
 
 .main {
-    position: relative;
-    height: 100vh;
 
     overflow: hidden;
 
     &__inner {
-        margin-bottom: 180px;
-
+        margin-bottom: 130px;
+        position: relative;
         column-gap: 30px;
 
 
         &__bg {
             position: absolute;
             top: 0;
-            left: -350px;
+            left: -46%;
+
+
             z-index: -1;
 
             max-width: 1356.7px;
             height: 1049.34px;
-            display: block;
         }
 
         &__title {
             margin-bottom: 80px;
+            padding-top: 100px;
         }
 
         &__buttons {
@@ -34,6 +34,7 @@
             column-gap: 20px;
 
         }
+
     }
 
     &__user {
@@ -46,6 +47,15 @@
         }
     }
 
+    &__about {
+        position: relative;
+        z-index: 1000;
+
+        background: $white;
+        border-top: 2px solid rgba(#000000, .1);
+        padding-top: 15px;
+    }
+
 }
 
 .button {
@@ -56,5 +66,12 @@
 
     &:hover {
         transform: translateY(-3px);
+    }
+}
+
+@media(max-width:1200px) {
+
+    .main__inner__title {
+        padding-top: 70px;
     }
 }

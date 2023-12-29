@@ -1,24 +1,23 @@
 .main {
-  position: relative;
-  height: 100vh;
   overflow: hidden;
 }
 .main__inner {
-  margin-bottom: 180px;
+  margin-bottom: 130px;
+  position: relative;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 .main__inner__bg {
   position: absolute;
   top: 0;
-  left: -350px;
+  left: -46%;
   z-index: -1;
   max-width: 1356.7px;
   height: 1049.34px;
-  display: block;
 }
 .main__inner__title {
   margin-bottom: 80px;
+  padding-top: 100px;
 }
 .main__inner__buttons {
   width: 100%;
@@ -34,6 +33,13 @@
   padding: 10px 30px;
   color: #B2C1BA;
 }
+.main__about {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
 
 .button {
   background-color: transparent;
@@ -42,4 +48,10 @@
 }
 .button:hover {
   transform: translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+  .main__inner__title {
+    padding-top: 70px;
+  }
 }/*# sourceMappingURL=main.css.map */
