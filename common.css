@@ -59,6 +59,9 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 28px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -79,4 +82,10 @@ h2 {
   font-size: 26px !important;
   font-weight: 700 !important;
   color: #A3C3AB !important;
+}
+
+h3 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000B61 !important;
 }/*# sourceMappingURL=common.css.map */

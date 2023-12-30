@@ -1,4 +1,5 @@
 .main {
+  height: 100vh;
   overflow: hidden;
 }
 .main__inner {
@@ -7,9 +8,12 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.main__inner__bg__mob {
+  display: none;
+}
 .main__inner__bg {
   position: absolute;
-  top: 0;
+  top: -190px;
   left: -46%;
   z-index: -1;
   max-width: 1356.7px;
@@ -18,6 +22,9 @@
 .main__inner__title {
   margin-bottom: 80px;
   padding-top: 100px;
+}
+.main__inner__title__mob {
+  display: none !important;
 }
 .main__inner__buttons {
   width: 100%;
@@ -52,6 +59,104 @@
 
 @media (max-width: 1200px) {
   .main__inner__title {
-    padding-top: 70px;
+    padding-top: 50px;
+  }
+  .main__inner__buttons {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+  .main__inner {
+    margin-bottom: 50px;
+  }
+  .main__inner__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .main__user__name {
+    font-size: 22px;
+  }
+  .main__user__number {
+    font-size: 22px;
+  }
+  .main__user__logo img {
+    width: 63px;
+    height: 81px;
+  }
+}
+@media (max-width: 576px) {
+  .main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+  }
+  .main__about {
+    border: none;
+    justify-content: space-around;
+  }
+  .main__user__logo {
+    display: none !important;
+  }
+  .main__user__name {
+    font-size: 18px;
+    color: #3643AC;
+    font-weight: 700;
+  }
+  .main__user__number {
+    padding: 0 !important;
+  }
+  .main__inner {
+    flex-direction: column;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    padding-top: 80px;
+    margin-bottom: 60px;
+  }
+  .main__inner__title {
+    display: none !important;
+  }
+  .main__inner__title__mob {
+    display: flex !important;
+    font-size: 18px !important;
+    margin-bottom: 45px;
+  }
+  .main__inner__qr {
+    display: flex;
+    justify-content: center;
+    color: #000B61;
+    padding: 0 40px;
+    width: 100%;
+    min-width: 212px !important;
+  }
+  .main__inner__bg {
+    display: none;
+  }
+  .main__inner__bg__mob {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 78px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(214, 219, 239, 0.4);
+  }
+  .button img {
+    width: 48px;
   }
 }/*# sourceMappingURL=main.css.map */

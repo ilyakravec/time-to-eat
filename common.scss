@@ -71,6 +71,10 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -95,4 +99,11 @@ h2 {
     font-weight: 700 !important;
 
     color: $light-green !important;
+}
+
+h3 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    color: $blue !important;
 }
